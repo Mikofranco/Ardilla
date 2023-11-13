@@ -1,15 +1,13 @@
 <template>
- <h1>mic</h1>
+ <HomePage/>
 </template>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+<script>
+import HomePage from "./views/homepage.vue"
+export default {
+  components:{
+    HomePage
+  }
+  
 }
+</script>
 
-
-</style>

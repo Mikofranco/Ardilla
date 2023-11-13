@@ -49,8 +49,12 @@ export default {
   padding: 1rem 3rem;
   background-color: #ffffff;
   border-radius: 20px;
+  outline: none;
+  border: none;
+  margin-bottom: 5rem;
 }
 .info-section button:hover {
   background-color: #8807f7;
+  color: #ffffff;
 }
 </style>

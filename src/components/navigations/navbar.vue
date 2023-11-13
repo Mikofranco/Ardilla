@@ -33,5 +33,6 @@ nav {
   justify-content: space-between;
   align-content: center;
   padding: 2rem;
+  margin-bottom: 2rem;
 }
 </style>

@@ -1,38 +1,32 @@
 <template>
- <div>
-   <button class="custom-button">Product <img v-bind:src="arrow" alt=""></button>
+  <div class="option">
+    <button class="custom-button">
+      Product <img v-bind:src="arrow" alt="" />
+    </button>
     <button class="custom-button">Business <span>Beta</span></button>
-    <button class="custom-button" >Company <img v-bind:src="arrow" alt=""></button>
+    <button class="custom-button">
+      Company <img v-bind:src="arrow" alt="" />
+    </button>
     <button class="custom-button">Learn</button>
- </div>
-
+  </div>
 </template>
 
 <script>
-import arrowDown from "../../assets/gridicons_dropdown.svg"
+import arrowDown from "../../assets/gridicons_dropdown.svg";
 export default {
-  name:"OptionSection",
-  props: {
-    text: String,    
-    image: String, 
-    extraText: String 
+  name: "OptionSection",
+  data() {
+    return {
+      arrow: arrowDown,
+    };
   },
-  computed: {
-    buttonStyle() {
-      return {
-        // Add any additional CSS styles for the button here
-      };
-    }
-  },
-  data(){
-    return{
-      arrow:arrowDown
-    }
-  }
 };
 </script>
 
 <style scoped>
+.option{
+  font-size: 20px;
+}
 .custom-button {
   background-color: transparent;
   border: none;
@@ -50,12 +44,12 @@ export default {
   font-size: 14px;
   margin-left: 10px;
 }
-span{
+span {
   border: 1px solid white;
   border-radius: 5px;
   margin-left: 3px;
 }
-div{
+div {
   display: flex;
   justify-content: center;
 }

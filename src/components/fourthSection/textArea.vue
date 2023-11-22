@@ -26,7 +26,7 @@ export default {
 </script>
 <style scoped>
 .fourth-page-container {
-  background-color: #fffdf2;
+  width: 80%;
 }
 .h1 {
   color: var(--teal-600, #0d9488);
@@ -47,12 +47,18 @@ export default {
   font-weight: 500;
   line-height: 50px; /* 208.333% */
 }
-.fourth-page-container button{
-    padding:1rem;
-    font-size: 18px;
-    border-radius: 15px;
+.fourth-page-container button {
+  padding: 1rem;
+  font-size: 18px;
+  border-radius: 15px;
+  display: flex;
+  gap: 5px;
 }
 .button-icon {
   background-color: #3d0072;
+  padding: 5px;
+  border-radius: 50%;
+  display: flex;
+  width: fit-content;
 }
 </style>
